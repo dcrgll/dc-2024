@@ -13,6 +13,7 @@
     "outdated": "bunx npm-check-updates --root --format group -i"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.5",
     "@t3-oss/env-nextjs": "^0.10.1",
     "jiti": "^1.21.6",
     "next": "14.2.5",

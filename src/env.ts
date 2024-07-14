@@ -3,11 +3,13 @@ import { z } from 'zod'
 
 export const env = createEnv({
   server: {
-    NODE_ENV: z.enum(['development', 'test', 'production'])
+    NODE_ENV: z.enum(['development', 'test', 'production']),
+    GOOGLE_ANALYTICS_ID: z.string().optional()
   },
   client: {},
   runtimeEnv: {
-    NODE_ENV: process.env.NODE_ENV
+    NODE_ENV: process.env.NODE_ENV,
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID
   } /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
    * useful for Docker builds.
