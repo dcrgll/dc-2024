@@ -30,7 +30,7 @@ export default function NavItem({
     >
       <Link href={href} className="flex min-h-24 flex-col justify-between">
         <div className="">
-          <h2 className="text-md break-words font-bold text-accent-foreground">
+          <h2 className="text-md mb-2 break-words font-bold text-accent-foreground">
             <span className="mr-2 text-sm">{emoji}</span> {label}
           </h2>
 

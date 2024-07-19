@@ -6,7 +6,7 @@ export default function NoteTitle({
   emoji: string
 }) {
   return (
-    <h1 className="mb-4 text-2xl font-bold text-accent-foreground">
+    <h1 className="mb-8 mt-4 text-2xl font-bold text-accent-foreground">
       <span className="mr-2">{emoji}</span> {children}
     </h1>
   )
