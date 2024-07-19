@@ -4,20 +4,16 @@ import NavItem from './nav-item'
 
 export default function NoteNavigation() {
   const items = Object.keys(routes).map((key) => {
-    const route = routes[key] as {
-      href: string
-      label: string
-      emoji: string
-      description: string
-    }
+    const route = routes[key]
 
     return (
       <NavItem
-        key={key}
+        key={route.href}
         href={route.href}
         label={route.label}
         emoji={route.emoji}
         description={route.description}
+        created={route.created}
       />
     )
   })
