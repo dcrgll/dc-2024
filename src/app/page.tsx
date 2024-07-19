@@ -4,7 +4,7 @@ import MobileOnly from '@/components/mobile-only'
 import NoteNavigation from '@/components/note-navigation'
 
 export const metadata: Metadata = {
-  title: 'notes'
+  title: 'notes | dan cargill'
 }
 
 export default function Home() {
