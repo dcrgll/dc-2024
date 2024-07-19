@@ -9,12 +9,14 @@ export default function NavItem({
   label,
   description,
   href,
-  emoji
+  emoji,
+  created
 }: {
   label: string
   description: string
   href: string
   emoji: string
+  created: string
 }) {
   const active = usePathname() === href
 
@@ -37,7 +39,7 @@ export default function NavItem({
           </p>
         </div>
 
-        <span className="mt-2 text-xs text-[#6F737A]">57 minutes ago</span>
+        <span className="mt-2 text-xs text-[#6F737A]">{created}</span>
 
         <hr className="mt-2 w-full px-2 text-border" />
       </Link>
