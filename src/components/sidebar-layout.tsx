@@ -8,7 +8,7 @@ export default function SideBarLayout({
   return (
     <div className="flex min-h-dvh text-white">
       <Sidebar />
-      <div className="h-dvh flex-grow overflow-y-auto">{children}</div>
+      <main className="h-dvh flex-grow overflow-y-auto">{children}</main>
     </div>
   )
 }

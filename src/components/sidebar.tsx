@@ -1,4 +1,4 @@
-import SidebarNavItem from './siderbar-nav-item'
+import NavItem from './nav-item'
 
 export default function Sidebar() {
   return (
@@ -12,13 +12,13 @@ export default function Sidebar() {
 
         <nav>
           <ul className="block w-full">
-            <SidebarNavItem
+            <NavItem
               href="/about"
               title="About"
               description="here is a very long preview of the note, it should have some
             ellipsis at the end"
             />
-            <SidebarNavItem
+            <NavItem
               href="/links"
               title="Links"
               description="here is a very long preview of the note, it should have some

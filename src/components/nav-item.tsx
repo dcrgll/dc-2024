@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import { cn } from '@/lib/utils'
 
-export default function SidebarNavItem({
+export default function NavItem({
   title,
   description,
   href
@@ -19,9 +19,9 @@ export default function SidebarNavItem({
   return (
     <li
       className={cn(
-        'border-b-1 mt-2 flex w-full flex-col justify-between rounded-md border-border p-2 hover:bg-border',
-        active && 'border-l-8 border-l-accent-foreground bg-border',
-        !active && 'border-b-2 border-l-8 border-l-transparent'
+        'border-b-1 mt-2 flex w-full flex-col justify-between rounded-md border-l-8 border-r-8 border-r-transparent py-2 hover:bg-border',
+        active && 'border-l-accent-foreground bg-border',
+        !active && 'border-l-transparent'
       )}
     >
       <Link href={href} className="flex min-h-24 flex-col justify-between">
@@ -36,6 +36,8 @@ export default function SidebarNavItem({
         </div>
 
         <span className="mt-2 text-xs text-[#6F737A]">57 minutes ago</span>
+
+        <hr className="mt-2 w-full px-2 text-border" />
       </Link>
     </li>
   )
