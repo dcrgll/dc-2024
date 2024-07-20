@@ -3,5 +3,5 @@ export default function NoteContent({
 }: {
   children: React.ReactNode
 }) {
-  return <div className="prose max-w-none px-8">{children}</div>
+  return <div className="prose px-4">{children}</div>
 }
