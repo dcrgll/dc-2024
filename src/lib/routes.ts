@@ -6,7 +6,7 @@ const routes: Record<string, Route> = {
     label: 'about',
     emoji: '📝',
     description:
-      'here is a very long preview of the note, it should have some ellipsis at the end',
+      'senior javascript engineer at pion (studentbeans), building flxsh.co, guitarist and tone fiend, elden lord.',
     created: 'July 19, 2024 at 6:03 PM'
   },
   links: {
