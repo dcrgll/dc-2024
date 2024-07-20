@@ -16,22 +16,22 @@ export default function AboutPage() {
       <NoteTitle emoji={routes.about.emoji}>{routes.about.label}</NoteTitle>
 
       <NoteContent>
-        {/* <h4 className="font-bold">currently</h4> */}
+        <ul className="list-disc">
+          <li>
+            senior javascript engineer at{' '}
+            <Link href="https://wearepion.com">pion</Link> (
+            <Link href="https://studentbeans.com">studentbeans</Link>).
+          </li>
 
-        <li>
-          senior javascript engineer at{' '}
-          <Link href="https://wearepion.com">pion</Link> (
-          <Link href="https://studentbeans.com">studentbeans</Link>).
-        </li>
+          <li>
+            building <Link href="https://flxsh.co">flxsh.co</Link> because
+            organising a tattoo is a pain.
+          </li>
 
-        <li>
-          building <Link href="https://flxsh.co">flxsh.co</Link> because
-          organising a tattoo is a pain.
-        </li>
+          <li>guitarist and tone fiend. </li>
 
-        <li>guitarist and tone fiend. </li>
-
-        <li>elden lord.</li>
+          <li>elden lord.</li>
+        </ul>
       </NoteContent>
     </Note>
   )
