@@ -15,9 +15,16 @@ const lastfm_config = {
   limit: 10
 }
 
+const SevenDays = 60 * 60 * 24 * 7
+
 export async function getTopAlbums() {
   const res = await fetch(
-    `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${lastfm_config.user}&period=${lastfm_config.period.twelveMonths}&limit=${lastfm_config.limit}&api_key=${lastfm_config.api_key}&format=json`
+    `https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=${lastfm_config.user}&period=${lastfm_config.period.twelveMonths}&limit=${lastfm_config.limit}&api_key=${lastfm_config.api_key}&format=json`,
+    {
+      next: {
+        revalidate: SevenDays
+      }
+    }
   )
 
   const data = (await res.json()) as { topalbums: { album: Album[] } }
@@ -27,7 +34,12 @@ export async function getTopAlbums() {
 
 export async function getTopTracks() {
   const res = await fetch(
-    `https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${lastfm_config.user}&period=${lastfm_config.period.oneMonth}&limit=${lastfm_config.limit}&api_key=${lastfm_config.api_key}&format=json`
+    `https://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=${lastfm_config.user}&period=${lastfm_config.period.oneMonth}&limit=${lastfm_config.limit}&api_key=${lastfm_config.api_key}&format=json`,
+    {
+      next: {
+        revalidate: SevenDays
+      }
+    }
   )
 
   const data = (await res.json()) as { toptracks: { track: Track[] } }
