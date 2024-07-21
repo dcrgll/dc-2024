@@ -1,6 +1,11 @@
 import { type Metadata } from 'next'
 
-import { getTopAlbums, getTopTracks } from '@/lib/lastfm'
+import {
+  getTopAlbumsOverall,
+  getTopAlbumsWeekly,
+  getTopTracksOverall,
+  getTopTracksWeekly
+} from '@/lib/lastfm'
 import routes from '@/lib/routes'
 import { Accordion } from '@/components/ui/accordion'
 import Note from '@/components/note'
@@ -13,10 +18,10 @@ export const metadata: Metadata = {
 }
 
 export default async function NowPlayingPage() {
-  const albumsOverall = await getTopAlbums()
-  const albumsWeekly = await getTopAlbums('7Days')
-  const tracksOverall = await getTopTracks()
-  const tracksWeekly = await getTopTracks('7Days')
+  const albumsOverall = await getTopAlbumsOverall()
+  const albumsWeekly = await getTopAlbumsWeekly()
+  const tracksOverall = await getTopTracksOverall()
+  const tracksWeekly = await getTopTracksWeekly()
 
   return (
     <Note>
