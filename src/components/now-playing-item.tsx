@@ -18,9 +18,11 @@ export default function NowPlayingItem({
 }) {
   const renderListItem = (data: Album | Track) => {
     return (
-      <li key={data.name} className="list-item text-accent-foreground">
+      <li key={data.name} className="flex items-center text-accent-foreground">
+        <span className="-mt-1 mr-2 text-3xl text-white">•</span>
         <Link href={data.url}>
-          {data.name.toLowerCase()} by {data.artist.name.toLowerCase()}
+          {data.name.toLowerCase()} <span className="text-white">by</span>{' '}
+          {data.artist.name.toLowerCase()}
         </Link>
       </li>
     )
@@ -28,8 +30,8 @@ export default function NowPlayingItem({
   return (
     <AccordionItem value={type} className="text-white md:max-w-[500px]">
       <AccordionTrigger>{label}</AccordionTrigger>
-      <AccordionContent className="text-md">
-        <ul className="text-md list-disc">{data.map(renderListItem)}</ul>
+      <AccordionContent>
+        <ul className="text-md">{data.map(renderListItem)}</ul>
       </AccordionContent>
     </AccordionItem>
   )
