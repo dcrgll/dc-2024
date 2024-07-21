@@ -13,15 +13,22 @@ const routes: Record<string, Route> = {
     href: '/links',
     label: 'links',
     emoji: '💻',
-    description: 'email, github, linkedin, instagram',
+    description: 'some places you can find me on the internet',
     created: 'July 19, 2024 at 6:20 PM'
   },
   nowPlaying: {
     href: '/now-playing',
     label: 'now playing',
     emoji: '🎵',
-    description: 'currently listening to music',
+    description: 'currently listening to',
     created: 'July 19, 2024 at 6:21 PM'
+  },
+  projects: {
+    href: '/projects',
+    label: 'projects',
+    emoji: '🛠️',
+    description: "some things i've worked on",
+    created: 'July 20, 2024 at 6:23 PM'
   }
 }
 

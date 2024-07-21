@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 
+import { links } from '@/lib/links'
 import routes from '@/lib/routes'
-import { links } from '@/lib/site'
 import Link from '@/components/link'
 import Note from '@/components/note'
 import NoteContent from '@/components/note-content'
