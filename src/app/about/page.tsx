@@ -26,15 +26,15 @@ export default function AboutPage() {
           <li>can normally be found in a room full of guitar pedals.</li>
 
           <li>
-            building <Link href="https://flxsh.co">flxsh.co</Link> because
-            organising a tattoo is a pain.
+            I also build tools for creatives at{' '}
+            <Link href="https://payday.so">payday.so</Link>.
           </li>
 
           <li>recently became an elden lord.</li>
           <li>
-            i buy a lot of domains and{' '}
-            <Link href="https://domains.cargill.dev">
-              {"promise i'm doing something with them"}
+            I like to{' '}
+            <Link href="https://instagram.com/dncrgll">
+              travel and play music
             </Link>
             .
           </li>
