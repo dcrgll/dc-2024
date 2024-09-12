@@ -7,10 +7,10 @@ export const projects: Record<string, Project> = {
     description: "the world's leading student loyalty network.",
     tags: ['typescript', 'next.js', 'tailwindcss', 'emotion', 'aws']
   },
-  flxsh: {
-    href: 'https://flxsh.co',
-    label: 'flxsh',
-    description: "let's make tattoos easier.",
+  payday: {
+    href: 'https://payday.so',
+    label: 'payday',
+    description: 'building tools for creatives.',
     tags: ['typescript', 'react', 'next.js', 'tailwindcss', 'vercel']
   },
   conjurer: {

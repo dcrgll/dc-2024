@@ -3,43 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build",
     "dev": "next dev",
     "dev:turbo": "next dev --turbo",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "outdated": "bunx npm-check-updates --root --format group -i"
+    "lint": "next lint",
+    "outdated": "bunx npm-check-updates --root --format group -i",
+    "start": "next start"
+  },
+  "prettier": "@dc_/prettier-config",
+  "eslintConfig": {
+    "extends": "@dc_/eslint-config"
   },
   "dependencies": {
-    "@next/third-parties": "^14.2.5",
+    "@next/third-parties": "^14.2.10",
     "@radix-ui/react-accordion": "^1.2.0",
-    "@t3-oss/env-nextjs": "^0.10.1",
+    "@t3-oss/env-nextjs": "^0.11.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "jiti": "^1.21.6",
-    "lucide-react": "^0.411.0",
-    "next": "14.2.5",
+    "lucide-react": "^0.440.0",
+    "next": "14.2.10",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
-    "@types/node": "^20",
+    "@dc_/eslint-config": "^1.0.1",
+    "@dc_/prettier-config": "^1.0.2",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.11",
     "typescript": "^5"
   }
 }
